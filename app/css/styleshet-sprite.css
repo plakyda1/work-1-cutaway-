@@ -1,0 +1,83 @@
+/*-------------SOCIAL-SPRITE------------*/
+.social {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20px;
+}
+.social-button{
+    float: right;
+    margin-top: 30px;
+}
+.social-first{
+    margin-left: 0px;
+}
+
+.social-facebook {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+    background-repeat: no-repeat;
+}
+
+.social-facebook:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.social-gihtub {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -119px;
+}
+
+.social-gihtub:hover{
+    width: 47px;
+    height: 47px;
+    background-position: -5px -176px;
+}
+
+.social-tw {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -233px;
+}
+
+.social-tw:hover{
+    width: 47px;
+    height: 47px;
+    background-position: -5px -290px;
+}
+
+.social-vk {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -347px;
+}
+
+.social-vk:hover{
+    width: 47px;
+    height: 47px;
+    background-position: -5px -404px;
+}
+.in {
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.in-log {
+    width: 20px;
+    height: 32px;
+    background-position: -5px -5px;
+    position: absolute;
+    left: 50px;
+    top: 23px;
+}
+
+.in-log:hover {
+    width: 20px;
+    height: 32px;
+    background-position: -5px -47px;
+}
