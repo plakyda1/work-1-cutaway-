@@ -1,6 +1,3 @@
-header, nav, section, article, aside, footer {
-   display:block;
-}
 *{
 	box-sizing: border-box;
 }
@@ -16,7 +13,7 @@ body{
 	background: url(../img/background.png);
 }
 .section-title>.h1{
-	margin-left: 22px;
+	margin-left: 25px;
 }
 .section-title-first>.h1{
 	margin-left: 22px;
@@ -41,12 +38,13 @@ body{
 	min-height: 100%;
 	overflow: hidden;
 	position: relative;
+	min-width: 960px;
 }
 .header{
 	background: #eff3f7;
 	height: 117px;
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 }
 .logo-and-button{
 	height: 118px;
@@ -57,7 +55,22 @@ body{
 	float: left;
 	margin-top: 20px;
 }
-
+/*-------------SOCIAL-SPRITE------------*/
+.social {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20px;
+    text-indent: -9999px;
+}
+.social-button{
+    float: right;
+    margin-top: 30px;
+}
+.social-first{
+    margin-left: 0px;
+}
+/*---------------------------------------*/
 .header:after{
 	position: absolute;
 	content: " ";
@@ -68,8 +81,9 @@ body{
 	width: 100%;
     height: 3px;
 }
-.content{
 
+.content{
+	
 }
 .container{
 	margin: 0 auto;
@@ -89,11 +103,12 @@ body{
 	list-style-type: none;
 }
 .menu{
-	margin-bottom: 23px;
+	margin-bottom: 26px;
 }
 .menu-item{
 	width: 100%;
 	line-height: 73px;
+	height: 73px;
 	padding-left: 28px;
 	background: #eff3f7;
 	color: #959aa8;
@@ -109,12 +124,8 @@ body{
 }
 .border-line{
 	/*border-top: 2px solid #3ba8c0;
-	border-bottom: 2px solid #3ba8c0;
-	border-radius: 30px;
-	*/
-/*	position: relative;
-	border-image: url(../img/border.png);
-	border: 2px 0;*/
+	border-bottom: 2px solid #3ba8c0;*/
+	position: relative;
 }
 
 .border-line:before{
@@ -143,6 +154,7 @@ body{
 	background: #3ba8c0;
 	color: #fff;
 	font-size: 1.45em;
+	border: 2px solid #3ba8c0;
 }
 .active-link:hover{
 	color: #fff;
@@ -213,8 +225,8 @@ body{
 .section{
 	width: 100%;
 	background: #eff3f7;
-	padding-bottom: 31px;
-	margin-bottom: 26px;
+	padding-bottom: 40px;
+    margin-bottom: 29px;
 	border-radius: 5px;
 }
 .section-title{
@@ -246,6 +258,7 @@ body{
 	width: 210px;
 	text-align: center;
 	margin-top: 36px;
+	padding-left: 52px;
 }
 .image{
 	width: 150px;
@@ -273,7 +286,7 @@ body{
 }
 .information-item{
 	position: relative;
-	margin-top: 30px;
+	margin-top: 26px;
 	margin-left: 125px;
 }
 .information-item:after{
@@ -345,7 +358,7 @@ body{
 	background: -webkit-linear-gradient(top,  #3ba8c0 50%,#2e8ca2 50%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #3ba8c0 50%,#2e8ca2 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
-	padding: 4px 14px;
+	padding: 2px 14px;
 	float: left;
 }
 .title-navyki{
@@ -355,6 +368,28 @@ body{
 	float: left;
 	width: 250px;
 }
+/*----------------Замок-------------------*/
+.in {
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.in-log {
+    width: 20px;
+    height: 32px;
+    background-position: -5px -5px;
+    position: absolute;
+    left: 33px;
+    top: 26px;
+}
+
+.in-log:hover {
+    width: 20px;
+    height: 32px;
+    background-position: -5px -47px;
+}
+
 
 /*---------------Clearfix-------------------*/
 .clearfix:before,

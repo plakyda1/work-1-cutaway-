@@ -1,8 +1,12 @@
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
 .form{
-	padding: 0;
+	padding-bottom: 210px;
 }
 .section-title-form{
-	min-height: 121px;
+	min-height: 138px;
 	background: #48cbe8;
 	position: relative;
 	border-radius: 5px;
@@ -22,7 +26,8 @@
 	text-align: center;
 }
 .forma{
-	margin-left: 150px;
+	margin-top: 40px;
+    margin-left: 125px;
 }
 .forma-text{
 	display: block;
@@ -32,6 +37,14 @@
 }
 .forma-input{
 	display: block;
+	border-radius: 4px;
+    border: 1px solid #48cbe8;
+    font-size: 0.8em;
+    padding-left: 10px;
+    color: #48cbe8;
+}
+.forma-input:focus{
+	outline:none;
 }
 .name,.email{
 	width: 190px;
@@ -43,26 +56,98 @@
 }
 .forma-messege{
 	float: left;
+	margin-top: 11px;
+	color: #48cbe8;
+	margin-bottom: 10px;
 }
 .messege{
 	width: 402px;
 	height: 183px;
+	padding-top: 10px;
 }
 .forma-captcha{
 	float: left;
+	margin-bottom: 21px;
 }
 .captcha{
 	float: left;
-    margin-top: 10px;
     width: 191px;
     height: 80px;
     overflow: hidden;
     background: url(../img/captcha.png) no-repeat center center;
+}
+.captcha-label{
+	font-size: 1.05em;
 }
 .captcha-text{
 	float: left;
 	width: 192px;
 	height: 32px;
 	margin-left: 19px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
+.button-group{
+	float: left;
+}
+.button{
+	text-decoration:none;
+	text-align:center;
+    padding: 1px 22px;
+ 	border:none; 
+ 	font-family: 'fira_sansbook';
+ 	font-size: 1.2em;
+ 	color:#ffffff; 
+ 	border-radius: 5px; 
+}
+.button-send{
+ background:#48cbe8; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px -3px 0px #3ba8c0; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px -3px 0px #3ba8c0;  
+ box-shadow:0px 0px 2px #bababa, inset 0px -3px 0px #3ba8c0; 
+
+  -webkit-transition: all 0.1s ease;
+ -moz-transition:  all 0.1s ease;
+ -o-transition:  all 0.1s ease;
+ transition:  all 0.1s ease;
+}
+ .button-send:hover{  
+
+ -webkit-box-shadow:inset 0,0,0px 0,0,0px 0,0,0px #3ba8c0,#3ba8c0,#ffffff;  
+ -moz-box-shadow:inset 0px 0px 0px #3ba8c0;  
+ box-shadow:inset 0px 0px 0px #3ba8c0;  
+  
+ }
+ .button-send:active{ 
+ background:#48cbe8; 
+-webkit-box-shadow:0px 0px 2px #bababa, inset 0px 3px 1px #3ba8c0; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 3px 1px #3ba8c0;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 3px 1px #3ba8c0;  
+  
+ }
+
+ .button-reset{
+ margin-left: 133px;
+ background:#849db5; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px -3px 0px #687b8f; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px -3px 0px #687b8f;  
+ box-shadow:0px 0px 2px #bababa, inset 0px -3px 0px #687b8f;  
+  
+  -webkit-transition: all 0s ease;
+ -moz-transition:  all 0s ease;
+ -o-transition:  all 0s ease;
+ transition:  all 0s ease;}
+
+ .button-reset:hover{
+  background:#849db5;
+ -webkit-box-shadow:inset 0,0,0px 0,0,0px 0,0,0px #687b8f,#687b8f,#ffffff;  
+ -moz-box-shadow:inset 0px 0px 0px #687b8f;  
+ box-shadow:inset 0px 0px 0px #687b8f;  
+  
+ }
+ .button-reset:active{ 
+ background:#849db5; 
+-webkit-box-shadow:0px 0px 2px #bababa, inset 0px 3px 1px #687b8f; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 3px 1px #687b8f;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 3px 1px #687b8f;  
+  outline: none;
+ }
