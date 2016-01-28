@@ -1,0 +1,71 @@
+.wrap-myvork-list{
+    padding: 27px 20px;
+    text-align: justify;
+}
+.projects-item {
+    width: 183px; 
+    position: relative; 
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    border-radius: 5px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+.projects-item .project-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.projects-item .zoom-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.projects-item:hover .zoom-wrapper {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.projects-item .zoom-link {
+    font-size: 12px;
+    border: 1px solid #eff3f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 4px;
+}
+.projects-item:hover .project-img{
+	-moz-opacity: 0.30;
+	opacity:.30;
+	filter: alpha(opacity=30);
+    border-radius: 5px;
+}
+.project-img{
+    max-width: 183px;
+    border: 2px solid #3ba8c0;
+    border-radius: 5px;
+}
+.projects-item:hover .hover-img{
+	background-color: #016ca4;
+    border-radius: 5px;
+}
+.podpis-1{
+    margin-top: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #3ba8c0;
+    font-family: 'fira_sanslight_italic';
+}
+.podpis-2{
+    text-align: center;
+    margin-bottom: 33px;
+    font-family: 'fira_sanslight';
+    font-size: 0.95em;
+    color: #4a545d;
+}
