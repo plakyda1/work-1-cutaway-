@@ -3,7 +3,7 @@
 
 	Как его установить?
 	
-	1. https://github.com/plakyda1/workflow-1.git
+	1. git clone https://github.com/plakyda1/workflow-1.git
 	2. npm i
 	3. bower i
 	4. gulp
