@@ -1,7 +1,8 @@
 ::-webkit-input-placeholder {color:#48cbe8;}
-::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+*/ 
 :-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#48cbe8;}
+:-ms-input-placeholder      {color:#48cbe8;}*/
+
 .form{
 	padding-bottom: 210px;
 }
@@ -64,6 +65,7 @@
 	width: 402px;
 	height: 183px;
 	padding-top: 10px;
+	resize: none;
 }
 .forma-captcha{
 	float: left;
@@ -98,6 +100,8 @@
  	font-size: 1.2em;
  	color:#ffffff; 
  	border-radius: 5px; 
+ 	outline: none !important;
+ 	border: 0 !important;
 }
 .button-send{
  background:#48cbe8; 

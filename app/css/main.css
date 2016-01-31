@@ -38,7 +38,7 @@ body{
 	min-height: 100%;
 	overflow: hidden;
 	position: relative;
-	min-width: 960px;
+	min-width: 1300px;
 }
 .header{
 	background: #eff3f7;
@@ -114,6 +114,11 @@ body{
 	color: #959aa8;
 	font-family: 'fira_sansbook';
 	font-size: 1.3em;
+}
+.menu-item-a{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .menu-item:hover{
 	color: #3ba8c0;
@@ -265,6 +270,7 @@ body{
 	height: 150px;
 	border-radius: 50%;
 	border: 4px solid #3ba8c0;
+	overflow: hidden;
 }
 .information-first{
 	float: left;
@@ -329,6 +335,7 @@ body{
 	height: 60px;
 }
 .footer{
+	min-width: 1300px;
 	background: #eff3f7;
 	height: 77px;
 	margin-top: -60px;
