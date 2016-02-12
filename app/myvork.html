@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css"  />
 	<link rel="stylesheet" href="css/myvork.css" type="text/css"  />
 	<link rel="stylesheet" href="css/form.css" type="text/css"  />
+
 		<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -159,9 +160,46 @@
 							  	Описанине сайта
 							  </div>
 							</a>
-							<a href="#" class="projects-item" >
+							<a href="#" id="my-button" class="projects-item" >
 							  <img src="img/add-ptoject.png" alt="Добавить проект">
 							</a>
+							<!-- **********************************Element to pop up ****************************-->
+							<div id="element_to_pop_up">
+								<div class="popup-title">
+									<h1 class="h1 popup-title-text">Добавление проекта</h1>
+									<a class="b-close">Закрыть</a>
+								</div>
+							    <div class="wrap-popup-forma">
+							    <form action="#" class="rf">
+							    	<div class="forma-popup">
+										<label class="forma-text-popup" for="forma-input-project">Название проекта</label>
+										<input type="text" id="forma-input-project" class="forma-input popup-input rfield" placeholder="Введите название" data-tooltip="left">
+										<div class="tooltip">введите название</div>
+									</div>
+									<div class="forma-popup">
+										<label class="forma-text-popup" for="chose-file">Картинка проекта</label>
+										<input type="file" id="chose-file-input" placeholder="Загрузите иозображение" class="rfield" data-tooltip="left">
+										<div class="tooltip">изображение</div>
+										<a id="chose-file" class="forma-input popup-input input-file "><span id="chose-file-text" class="popup-input-span" ></span></a>
+										
+										
+										<!-- <input type="text"   placeholder="Загрузите изображение"> -->
+									</div>
+									<div class="forma-popup">
+										<label class="forma-text-popup" for="forma-url-project">URL проекта</label>
+										<input type="text" id="forma-url-project" class="forma-input popup-input rfield" placeholder="Добавьте ссылку" data-tooltip="left">
+										<div class="tooltip">ссылка на проект</div>
+									</div>
+									<div class="forma-popup forma-popup-last">
+										<label class="forma-text-popup" for="forma-messege-project">Описание</label>
+										<textarea class="forma-input popup-messege rfield" id="forma-messege-project" placeholder="Пару слов о Вашем проекте" data-tooltip="left"></textarea>
+										<div class="tooltip">описание проекта</div>
+									</div>
+									<input type="button" value="Добавить" class="button button-send button-popup send" >
+							    </form>
+							    </div>
+							</div>
+							<!-- END ELEMENT TO POP UP -->
 							<div class="projects-item">
 								
 							</div>
@@ -183,6 +221,10 @@
 	</footer>
 	<script src= "bower/jquery/dist/jquery.js"></script>
 	<script src= "bower/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="js/main.js"></script>
+	<script src= "bower/bPopup/jquery.bpopup.js"></script>
+	<script src= "js/popup.js"></script>
+	<script src= "js/choose-file.js"></script>
+	<script src="js/validation.js"></script>
+	<script src= "js/main.js"></script>
 </body>
 </html>

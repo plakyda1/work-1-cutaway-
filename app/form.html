@@ -88,27 +88,33 @@
 						<div class="section-title-form">
 							<h1 class="h1 form-title">У вас интересный проект? Напишите мне</h1>
 						</div>
-						<form action="#" class="forma clearfix">
+						<form action="#" class="forma clearfix rf">
 							<div class="forma-name-email">
 								<label class="forma-text" for="forma-input-name">Имя</label>
-								<input type="text" id="forma-input-name" class="forma-input name" placeholder="Как к вам обращаться">
+								<input type="text" id="forma-input-name" class="forma-input name rfield" placeholder="Как к вам обращаться" data-tooltip="left">
+								<div class="tooltip">Вы не ввели имя</div>
 							</div>
 							<div class="forma-name-email">
 								<label class="forma-text" for="forma-input-email">Email</label>
-								<input type="text" id="forma-input-email" class="forma-input email" placeholder="Куда мне писать">
+								<input type="text" id="forma-input-email" class="forma-input email rfield" placeholder="Куда мне писать" data-tooltip="right">
+								<div class="tooltip">Вы не ввели email</div>
 							</div>
 							<div class="forma-messege">
 								<label class="forma-text" for="forma-input-messege">Сообщение</label>
-								<textarea class="forma-input messege" id="forma-input-messege" placeholder="Кратко в чем суть"></textarea>
+								<textarea class="forma-input messege rfield" id="forma-input-messege" placeholder="Кратко в чем суть" data-tooltip="left"></textarea>
+								<div class="tooltip">Ваш вопрос</div>
 							</div>
 							<div class="forma-captcha clearfix">
 								<label  class= "forma-text captcha-label" for="forma-captcha" >Введите код, указанный на картинке</label>
 								<div class="captcha"></div>
-								<input type="text" id="forma-captcha" class="forma-input captcha-text" placeholder="Введите код">
+								<div class="wrap-captcha clearfix">									
+								<input type="text" id="forma-captcha" class="forma-input captcha-text rfield" placeholder="Введите код" data-tooltip="right">
+								<div class="tooltip">Вы не ввели код</div>
+								</div>
 							</div>	
 							<div class="button-group clearfix">	
-								<input type="button" value="Отправить" class="button button-send">
-								<input type="reset" value="Очистить" class="button button-reset">
+								<input type="button" value="Отправить" class="button button-send send" >
+								<input type="reset" value="Очистить" class="button button-reset reset">
 							</div>
 						</form>
 					</section>
@@ -128,6 +134,7 @@
 	</footer>
 	<script src= "bower/jquery/dist/jquery.js"></script>
 	<script src= "bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
