@@ -154,12 +154,6 @@
     margin:0 auto;
 }
 /*input-file*/
-#chose-file-input{
-    position:absolute;
-    height:41px;
-    width:320px;
-    opacity:0;
-}
 .input-file{
     background: url(../img/popup-add-file.png);
     background-repeat: no-repeat;
@@ -167,11 +161,19 @@
     background-color: #fff;
     cursor:pointer;
 }
-.file{}
 .popup-input-span{
     display: block;
     height: 41px;
     line-height: 41px;
+}
+.file-upload{
+    display:none;
+}
+.file-stand-in{
+    display:block;
+    width:100%;
+    z-index:2;
+    cursor:pointer;
 }
 /*input-file end*/
 

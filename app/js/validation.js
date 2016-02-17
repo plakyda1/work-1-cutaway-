@@ -1,50 +1,54 @@
+// 
 // Объявление модуля
 var myModule = (function () {
+		//Обявляю переменные
+		var	form = $('.rf'),
+		send = form.find('.send'),
+		reset = form.find('.reset'),
+		rInputs = form.find('.rfield'),
+		inputFile = form.find('.input-file');
 
 	// Инициализирует наш модуль
 	function init () {
 		_setUpListners();
-		//checkInput();
-		// _centeringTop()
 	};
 
 	// Прослушивает события 
 	function _setUpListners () {
+
 		//событие на нажатие submit
-		send.on('click', function(e){
-			e.preventDefault();
+		send.on('click', function(event){
+			event.preventDefault ? event.preventDefault() : (event.returnValue = false);
 			_checkInput();
-			_inputFile();
 		});
-		//событие на нажатие клавиши в пустом инпуте
-		rInputs.on('keypress', function(){
-			_hideTooltip($(this));
-		});
-		// очистка онпутоав
+		// событие при нажатие на "reset"очистка инпутоав
 		reset.on('click', function(){
 			rInputs.each(function(){
 				_hideTooltip($(this));
 			})
 		})
+		//событие на нажатие клавиши в пустом инпуте
+		rInputs.on('keypress', function(){
+			_hideTooltip($(this));
+		});
+		inputFile.on('click', function(){
+			$(this).removeClass('empty-input')
+			$(this).next().hide()
+		})
 	};
-
-	//Проверка полей
-	var	form = $('.rf'),
-	send = form.find('.send'),
-	reset = form.find('.reset'),
-	rInputs = form.find('.rfield'),
-	file = form.find('#chose-file-input');
 	
 		function _checkInput(){
 			rInputs.each(function(){
-				if ($(this).val() == "" && $(this).attr('type')!='file') {
-					//показываем тултип
+					//проверяю какой тип поля 
+				if ($(this).val() == "" ) {
+					// если значение поля .val() поусток то добавляем к нему класс .empty-input
 					$(this).addClass('empty-input');
+					//показываем тултип
 					$(this).next().show();
 					//вертикально центрируем
 					$(this).next().css({'margin-top': -$(this).outerHeight()/2-$(this).next().outerHeight()/2});
 				};
-				//проверям атрибут, с какой стороны ставить тултип
+				//проверям атрибут "data-tooltip", что бы определить с какой стороны ставить тултип
 				if ($(this).attr('data-tooltip')=='left'){
 					$(this).next().css({'left': -$(this).next().outerWidth()-7})
 					$(this).next().addClass('left-tooltip-arrow');
@@ -58,16 +62,6 @@ var myModule = (function () {
 			})
 
 		}
-		function _inputFile(){
-			if ($('#chose-file-input').val()==""){
-					//условие для инпута типа файл
-					$('#chose-file').addClass('empty-input');
-					$('#chose-file').prev().show();
-				} else{
-					$('#chose-file').removeClass('empty-input');
-					$('#chose-file').prev().hide();
-				}
-		}
 	// Скрываем тултипы и стилизацию постого инпута
 
 	function _hideTooltip(currentInput){
@@ -75,8 +69,7 @@ var myModule = (function () {
 			currentInput.next('.tooltip').hide()
 			currentInput.removeClass('empty-input')
 		}
-	}
-
+	};
 
 	// Возвращаем объект (публичные методы) 
 	return {
@@ -86,4 +79,7 @@ var myModule = (function () {
 })();
 
 // Вызов модуля
+// Проверяем есть ли на странице формы для проверки
+if ($('.rf')) {
 myModule.init();
+}

@@ -160,7 +160,7 @@
 							  	Описанине сайта
 							  </div>
 							</a>
-							<a href="#" id="my-button" class="projects-item" >
+							<a href="#" id="my-button" class="projects-item tt" >
 							  <img src="img/add-ptoject.png" alt="Добавить проект">
 							</a>
 							<!-- **********************************Element to pop up ****************************-->
@@ -177,10 +177,15 @@
 										<div class="tooltip">введите название</div>
 									</div>
 									<div class="forma-popup">
-										<label class="forma-text-popup" for="chose-file">Картинка проекта</label>
-										<input type="file" id="chose-file-input" placeholder="Загрузите иозображение" class="rfield" data-tooltip="left">
+										<!-- <label class="forma-text-popup" for="chose-file">Картинка проекта</label>
+										<input type="file" id="chose-file-input" placeholder="Загрузите картинку"  class="rfield" data-tooltip="left">
 										<div class="tooltip">изображение</div>
-										<a id="chose-file" class="forma-input popup-input input-file "><span id="chose-file-text" class="popup-input-span" ></span></a>
+										<a id="chose-file" class="forma-input popup-input input-file "><span id="chose-file-text" class="popup-input-span" ></span></a> -->
+										<label class="file-stand-in forma-text-popup">Картинка проекта
+										<input type="text" class="file-stand-in-text  forma-input popup-input input-file rfield" placeholder="Загрузить изображение" readonly data-tooltip="left">
+										<div class="tooltip">ссылка на проект</div>
+										</label>
+										<input class="file-upload" type="file" >
 										
 										
 										<!-- <input type="text"   placeholder="Загрузите изображение"> -->
@@ -222,9 +227,9 @@
 	<script src= "bower/jquery/dist/jquery.js"></script>
 	<script src= "bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src= "bower/bPopup/jquery.bpopup.js"></script>
+	<script src= "js/main.js"></script>
 	<script src= "js/popup.js"></script>
 	<script src= "js/choose-file.js"></script>
 	<script src="js/validation.js"></script>
-	<script src= "js/main.js"></script>
 </body>
 </html>

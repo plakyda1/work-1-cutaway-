@@ -1,20 +1,16 @@
- $(function (){
-            if($('#chose-file').length)
-            {
-                $('#chose-file').click(function(){
-                    $('#chose-file-input').click();
-                    return(false);
-                });
 
-                $('#chose-file-input').change(function(){
-                    $('#chose-file-text').html($(this).val());
-                    var text= $('#chose-file-text').html();
-                    text = text.replace("C:\\fakepath\\", "");
-                    $('#chose-file-text').html(text);
-                    if ($(this).val()=='') {
-                        $('#chose-file-text').text($(this).attr('placeholder'));
-                    };
-                }).change();// .change() в конце для того чтобы событие сработало при обновлении страницы
-            
-            }
-});
+ $(function (){
+
+            $('.file-stand-in').click(function(){
+                $('.file-upload').click();
+                return(false);
+            });
+            $('.file-upload').on('change',function(){
+                // console.log($('.file-upload').val())
+                $('.file-stand-in-text').val($('.file-upload').val());
+                var text= $('.file-stand-in-text').val();
+                text = text.replace("C:\\fakepath\\", "");
+                $('.file-stand-in-text').val(text);
+            }).change();// .change() в конце для того чтобы событие сработало при обновлении страницы
+
+ });
